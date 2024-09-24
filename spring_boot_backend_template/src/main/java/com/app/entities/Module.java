@@ -2,6 +2,8 @@ package com.app.entities;
 
 import javax.persistence.Entity;
 
+import com.sunbeam.entities.Course;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -22,4 +24,8 @@ public class Module extends BaseEntity{
 	private int labHrs;
 	
 	private String moduleRouterName;
+
+	@ManyToOne
+	@JoinColumn(name = "course_id")
+	private Course course;
 }
