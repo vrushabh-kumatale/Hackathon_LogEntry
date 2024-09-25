@@ -1,8 +1,9 @@
 package com.app.entities;
 
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
-import com.sunbeam.entities.Course;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
